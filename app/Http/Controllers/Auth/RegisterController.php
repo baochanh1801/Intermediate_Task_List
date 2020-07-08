@@ -44,7 +44,6 @@ class RegisterController extends Controller
     {
         $this->middleware('guest');
     }
-    
     protected function create(array $data)
     {
         return User::create([
